@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="./images/contact-form-icon.svg">
+    </header>
+    <main>
+        <h1>Interested in our <br> business pricing?</h1>
+        <p>Fill out the form to view details and we'll <br> contact you as soon as possible.</p>
+
+        <div class="content">
+            <div class="content1">
+                <div>
+                    <label for="name">Name</label> <br>
+                    <input type="text" name="name" id="name" placeholder="Ethan Johnson">
+                </div>
+
+                <div>
+                    <label for="email">Company Email</label><br>
+                    <input type="email" name="email" id="email" placeholder="ethan@johnson.com">
+                </div>                
+            </div>
+
+            <div class="content1">
+                <div>
+                    <label for="size">Company Size</label> <br>
+                    <select name="size" id="size" onchange="atualizarTextarea()">
+                        <option value="0-5 employees">0-5 employees</option>
+                        <option value="5-10 employees">5-10 employees</option>
+                        <option value="10-50 employees">10-50 employees</option>
+                        <option value="50-100 employees" selected>50-100 employees</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="subject">Subject</label> <br>
+                    <select class="ls-select" name="subject" id="subject">
+                        <option value="Responsivel Web Pages">Responsivel Web Pages</option>
+                        <option value="Data Structures">Data Structures</option>
+                        <option value="Software Developer">Software Developer</option>
+                        <option value="Building Landing pages" selected>Building Landing pages</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="content2">
+                <label for="message">Message</label> <br>
+                <textarea name="message" id="message">50-100 employees</textarea>
+            </div>
+
+            <div class="button"><button>Contact Sales</button></div>
+
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

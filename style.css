@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/bg-image.svg);
+    background-size: cover; 
+    background-position: center;
+    height: 100vh;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+header img {
+    margin: 20px 0 0 20px ;
+    width: 80px;   
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1 {
+    color: #fff;
+    font-size: 64px;
+    width: 600px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+main p {
+    color: #fff;
+    font-size: 32px;
+    width: 650px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+main .content {
+    background-color: #7272726d;
+    border-radius: 15px;
+    width: 850px;
+    height: 530px;
+    margin-top: 30px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+main .content label {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 200;
+}
+
+main .content .content1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+main .content .content1 div input, select {
+    width: 380px;
+    height: 60px;
+    margin-top: 5px;
+    padding-left: 20px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 0;
+    outline: none;
+}
+
+main .content .content1 div select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('./images/Expand_down.svg') no-repeat right center;
+    background-color: #fff;
+    background-position: calc(100% - 20px) center;
+    background-size: 20px;
+}
+
+main .content .content2 {
+    margin: 0px 20px;
+}
+
+main .content .content2 textarea {
+    width: 780px;
+    height: 180px;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-radius: 15px;
+    border: none;
+    margin: 5px 0 10px 0;
+    font-size: 16px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: bold;
+    outline: none;
+}
+
+main .content .button {
+    display: flex;
+    justify-content: center;
+}
+
+main .content .button button {
+    width: 780px;
+    height: 60px;
+    border-radius: 15px;
+    border: none;
+    font-weight: 600;
+    color: #4036A9;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    header img {
+        margin: 8px 0 0 8px ;
+        width: 50px;   
+    }
+    
+    main h1, main p {
+        width: 450px;
+    }
+
+    main .content {
+        width: 550px;
+    }
+
+    main .content .content1 div input, select {
+        width: 260px;
+        height: 40px;
+    }
+
+    main .content .content2 textarea {
+        width: 520px;
+
+    }
+
+    main .content .button button {
+        width: 530px;
+    }
+    
+}
